@@ -1,0 +1,20 @@
+<div id="session-form-container">
+    <h2 class="signup-heading">Sign Up</h2>
+    <%= auth_token %>
+
+    <form action="<%= users_url %>" method="post" class="signup-form">
+        <label for="signup-username" class="signup-label">Username</label>
+        <input type="text" name="user[username]" id="signup-username" class="signup-input">
+
+        <label for="signup-age" class="signup-label">Age</label>
+        <input type="text" name="user[age]" id="signup-age" class="signup-input">
+
+        <label for="signup-email" class="signup-label">Email</label>
+        <input type="text" name="user[email]" id="signup-email" class="signup-input">
+
+        <label for="signup-password" class="signup-label">Password</label>
+        <input type="password" name="user[password]" id="signup-password" class="signup-input">
+
+        <input type="submit" value="Create User" class="signup-button">
+    </form>
+</div>
